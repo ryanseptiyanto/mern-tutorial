@@ -1,4 +1,4 @@
-const mongoose = require(mongoose)
+const mongoose = require('mongoose')
 
 const userSchema = mongoose.Schema({
   name: {
@@ -18,4 +18,4 @@ const userSchema = mongoose.Schema({
   timestamp: true
 })
 
-modeule.export = mongoose.model('Users', userSchema)
+module.export = mongoose.model('Users', userSchema)
