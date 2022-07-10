@@ -80,7 +80,7 @@ const loginUser = asyncHandler(async (req, res) => {
 
 // @desc   GET user data
 // @route  GET /api/users/me
-// @access Public
+// @access Private
 const getMe = asyncHandler(async (req, res) => {
   res.json({
     message: "User data display"
@@ -93,7 +93,7 @@ const generateToken = (id) => {
     id
   }, process.env.JWT_SECRET, {
     expiresIn: "30d",
-  });
+  })
 }
 
 module.exports = {
